@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>soundcontrol audio visualizer by rendu </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+</head>
+<body>
+<!--     <a href="http://soundcloud.com" class="float">
+  <img src="https://developers.soundcloud.com/assets/powered_by_black-ee7e351d64511ecea75c6c17ca30064f.png" />
+</a> -->
+<div class="flex-container">
+  <div class="left">
+
+    <div class="left_play">
+      <button id="playButton" type="button" class="btn btn-primary"><h1>&#9658; Play</h1></button> 
+    </div>
+
+    <div class="left_find">
+      <div>
+        <input id="trackUrlSearch" type="url" placeholder="URL of SoundCloud track" /> 
+        <button id="findButton" class="btn btn-default">Find</button>
+      </div>
+
+      <div>
+        <button id="oscilloscopeButton" type="button" class="btn btn-default">Mode1</button>
+        <button id="frequencyBarsButton" type="button" class="btn btn-default">Mode2</button>
+      </div>
+    </div>
+
+    <div class="left_time">
+      <span id="currentTime">00:00:00</span>
+      <span id="totalTime">00:00:00</span>
+      <input id="slider" type="range" value="0"/>
+    </div>
+  </div>
+  <div class="right">
+    <div class="name">
+      <span id="artistName"></span><br/>
+      <span id="trackName"></span><br/>
+    </div>
+    <div>
+        <a id="artistUrl">
+          <img id="artistAvatar" />
+        </a>
+    </div>
+    <div>
+        <a id="trackUrl">
+          <img id="trackArt" />
+        </a>
+    </div>
+  </div>
+  <div class="canvas">
+  <canvas id="theCanvas" width="992" height="523" title="Press Play!"></canvas>
+  </div>
+</div>
+
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<script src="js/interact.js" type="text/javascript"></script>
+		<script src="http://connect.soundcloud.com/sdk.js""></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"  type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/css?family=Jaldi);
+
+html, * {
+  font-family: 'Jaldi', sans-serif; 
+}
+div{
+  vertical-align:baseline;
+  display: inline-block;
+}
+
+.flex-container {
+  text-align: center;
+  display:block;
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.left{
+  text-align: left;
+  float: left;
+  position: relative;
+  width: 467px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+#playButton{
+  float:center;
+  border-radius: 50%;
+  border: 0px solid ;
+}
+.left_find{
+  width: 341px;
+  /*height: 74px;*/
+  margin-left: 1.5rem;
+  position:absolute;
+  top:30px;
+}
+.left_time{
+  margin-top: 1rem;
+}
+
+.left_play{
+}
+
+#trackUrlSearch{
+  width:283px;
+}
+#slider{
+  width:467px;
+}
+
+#totalTime{
+  position: absolute;
+  text-align: right;
+  right:0;
+
+}
+.right{
+  text-align: right;
+  float: right;
+  position: relative;
+  /*width: 467px;*/
+  height:159px;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+#trackArt{
+  width: 159px;
+  height: 159px;
+  margin-left: 5px;
+  /*margin-right: 1rem;*/
+}
+
+#artistAvatar{
+  width: 159px;
+  height: 159px;
+}
+.name{
+
+  vertical-align:top;
+  margin-top: 6rem;
+
+}
+
+#artistName{
+  background-color: black;
+  color: #FFFFFF;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#trackName{
+
+  border-top: 2rem;
+  background-color: black;
+  color: #FFFFFF;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size:22px;
+
+}
+
+div {
+  margin: 0px;
+}
+
+.canvas{
+  /*width: 100%;*/
+  text-align: center;
+  display:block;
+  margin-left:0;
+  margin-right: 0;
+}
+
+#theCanvas{
+  width: 94%;
+/*  padding-left: 1rem;
+  padding-right: 1rem;*/
+}
